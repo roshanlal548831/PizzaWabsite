@@ -1,11 +1,12 @@
-import React from 'react'
-
+import "./App.css";
+import Navbar from "./componets/Navbar";
+// import { FaBeer } from 'reac-icons/fa';
 function App() {
   return (
     <>
-      <h1>hello</h1>
+      <Navbar/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
