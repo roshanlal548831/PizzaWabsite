@@ -1,29 +1,21 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
-import {MdLocalOffer} from "react-icons/md"
-function Navbar() {
+import React from 'react'
+
+const Navbar = () => {
   return (
     <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
-   <div className="container-fluid">
-     <h6>
-      <MdLocalOffer className='text-warning'/>
-      Free Home Devlivery on order About 500/- Rupees
-      </h6>
-   
-    <div className="collapse navbar-collapse text-white" id="navbarSupportedContent">
+    <nav className="navbar container navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+   <img src="images/logo.png" alt="logiimg" />
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <NavLink className="nav-link active" aria-current="page" href="#">Home</NavLink>
+          <a className="nav-link active" aria-current="page" href="/login">Login</a>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" href="#">About Us</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" href="#">Contact Us</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" href="#">tersm and policy</NavLink>
+          <a className="nav-link" href="/card">Card</a>
         </li>
        
       </ul>

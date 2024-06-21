@@ -1,0 +1,29 @@
+import React from 'react'
+
+const Policy = () => {
+  return (
+    <>
+       <div className="container con">
+         <h1>Terms and Policy</h1>
+        <div className="row">
+            <div className="col md-10">
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+                      <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ut.</h6>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit reprehenderit, exercitationem cumque, veritatis, nam laboriosam eos harum non sequi aut optio aspernatur! Tempore numquam nemo excepturi aliquam obcaecati possimus. Est accusantium iste libero veniam facere architecto recusandae similique tenetur excepturi magnam earum, corrupti sit deserunt explicabo quisquam facilis perferendis assumenda unde temporibus quibusdam, blanditiis ea voluptas sint. Assumenda dolore dolorem aspernatur vero autem unde sed debitis neque, voluptate voluptatum quos tempora saepe inventore facere beatae odit libero quidem, quae nemo perferendis in. Officiis aut, perferendis aliquid soluta voluptatibus possimus a necessitatibus maxime dolorem nam reiciendis adipisci consectetur? Unde, eaque?</p>
+            </div>
+       </div>
+       </div>
+    </>
+  )
+}
+
+export default Policy
