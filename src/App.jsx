@@ -8,6 +8,8 @@ import Navbar from "./componets/Navbar";
 import HomeScreen from "./screens/HomeScreen";
 import CartScreen from "./screens/CartScreen";
 import "react-icons"
+import Login from "./screens/Login";
+import Register from "./screens/Register";
 // import { FaBeer } from 'reac-icons/fa';
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/policy" element={<Policy/>}/>
           <Route path="/cart" element={<CartScreen/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login/>}/>
          </Routes>
       </BrowserRouter>
     </>

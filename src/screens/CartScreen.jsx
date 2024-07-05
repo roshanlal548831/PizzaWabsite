@@ -9,7 +9,11 @@ const CartScreen = () => {
     const cartItems = cartState.cartItems;
 
  const dispatch = useDispatch();
- 
+ const subtotal = cartItems.reduce((x,item) =>  x + item.payload.price,0 )
+//  const subtotal = cartItems.reduce((x,item) => {
+//   return  x+item.payload.price
+//  })
+//  console.log(subtotal)
 
 
   return (
@@ -57,6 +61,9 @@ const CartScreen = () => {
                 </div>
                 <div className="col-md-4">
                           <h1>Payment info</h1>
+                          <h4>Subtotal</h4>
+                          <h4>RS: {subtotal} /-</h4>
+                          <button className='btn btn-primary'>check out</button>
                 </div>
           </div>
       </div>
