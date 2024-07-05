@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {NavLink} from "react-router-dom";
+import {useDispatch,useSelector} from "react-redux"
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const cartState = useSelector(state => state.cartReducer);
   return (
     <>
     <nav className="navbar container navbar-expand-lg bg-body-tertiary">
@@ -12,10 +16,10 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/login">Login</a>
+          <NavLink className="nav-link active" aria-current="page" to="/login">Login</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/card">Card</a>
+          <NavLink className="nav-link" to="/cart">Cart{cartState.cartItems.length}</NavLink>
         </li>
        
       </ul>

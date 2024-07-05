@@ -2,14 +2,24 @@ import {createStore,combineReducers,applyMiddleware} from "redux";
 import {thunk} from "redux-thunk";
 import {composeWithDevTools} from "@redux-devtools/extension";
 import {getAllPizzaReduce} from "./reducers/PizzaReducer";
-// import { get } from "mongoose";
+import {cartReducer} from "./reducers/CartReducer";
 
+const cartItems = localStorage.getItem("cartItems")
+                 ? JSON.parse(localStorage.getItem("cartItems"))
+                  : []
 
 const rootReducer = combineReducers({
-    getAllPizzaReduce:getAllPizzaReduce
-})
+    getAllPizzaReduce:getAllPizzaReduce,
+    cartReducer: cartReducer
+});
 
-const initioalState = {}
+
+
+const initioalState = {
+    cartReducer:{
+        cartItems: cartItems
+    }
+}
 const middleware = [thunk]
 
 const store = createStore(

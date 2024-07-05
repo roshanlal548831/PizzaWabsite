@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-
+import {useDispatch} from "react-redux";
+import {addToCart} from "../action/CartAction"
 
 const Pizza = ({pizza}) => {
     const[varient,setVarient] = useState("small");
     const[quantity,setQuantity  ] = useState(1);
-
     
-
-
+    const dispatch = useDispatch();
+    const addToCartHandler = () =>{
+      dispatch(addToCart(pizza,quantity,varient))
+    }
 
   return (
     <>
@@ -22,9 +24,9 @@ const Pizza = ({pizza}) => {
                     <div className="col md-6">
                         <h6>Verients</h6>
                         <select value={varient} onChange={(e)=> setVarient(e.target.value)}>
-                            {pizza.varients.map((varients)=>{
+                            {pizza.variants.map((varients,i) =>{
                                 return(
-                                    <option  >{varients}</option>
+                                    <option key={i} >{varients}</option>
                                 )
                             })}
                         </select>
@@ -35,7 +37,7 @@ const Pizza = ({pizza}) => {
 
                         {[...Array(10).keys()].map((v,i)=>{
                             return(
-                                <option value={i +1 } >{i +1 }</option>
+                                <option value={i +1 } key={i}>{i +1 }</option>
                             )
                         })}
                         </select>
@@ -47,9 +49,9 @@ const Pizza = ({pizza}) => {
                 Price : {pizza.prices[0][varient] * quantity}
               </div>
               <div className="col md-6">
-                <buttton className="btn bg-warning text-white">
+                <button onClick={addToCartHandler} className="btn bg-warning text-white">
                    Add to card
-                </buttton>
+                </button>
                 
               </div>
             
