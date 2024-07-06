@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector,useDispatch} from "react-redux";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import {deleteFromCard} from "../action/CartAction"
+import Checout from '../checkout/Checout';
 
 
 const CartScreen = () => {
@@ -9,7 +10,7 @@ const CartScreen = () => {
     const cartItems = cartState.cartItems;
 
  const dispatch = useDispatch();
- const subtotal = cartItems.reduce((x,item) =>  x + item.payload.price,0 )
+ const subTotal = cartItems.reduce((x,item) =>  x + item.payload.price,0 )
 //  const subtotal = cartItems.reduce((x,item) => {
 //   return  x+item.payload.price
 //  })
@@ -61,9 +62,9 @@ const CartScreen = () => {
                 </div>
                 <div className="col-md-4">
                           <h1>Payment info</h1>
-                          <h4>Subtotal</h4>
-                          <h4>RS: {subtotal} /-</h4>
-                          <button className='btn btn-primary'>check out</button>
+                          <h4>SubTotal</h4>
+                          <h4>RS: {subTotal} /-</h4>
+                            <Checout subTotal={subTotal} />
                 </div>
           </div>
       </div>
