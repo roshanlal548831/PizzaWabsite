@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import Pizza from '../componets/Pizza';
 import {useDispatch,useSelector} from "react-redux"
 import {getAllPizza} from "../reducers/PizzaAction"
+import Loader from '../componets/Loader';
+import { toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 // import AllPizza from '../Pizza-data';
 
 const HomeScreen = () => {
@@ -21,14 +24,14 @@ const HomeScreen = () => {
     <>
        <div className="container">
         {loading?(
-          <h1>loading ...</h1>
+         <Loader/>
         )  : error? (
-        <h1>Error white fatching </h1>
+          toast("Error while fatching pizzas",{error})
           )  :(    <div className="row justify-content-md-center">
 
             {pizzas.map((pizza,i) => {
               return(
-               <div className="col-md-3 my-3 " key={i}>
+               <div className="col-md-4 my-5 p-3 " key={i}>
                <Pizza  pizza={pizza}/>
              </div>
               )

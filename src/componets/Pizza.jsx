@@ -14,14 +14,14 @@ const Pizza = ({pizza}) => {
   return (
     <>
       <div className="card" style={{width: "18rem"}}>
-            <img  src={pizza.image} className="card-img-top" alt="pizza-img" 
+            <img  src={pizza.image} className="card-img-top " alt="pizza-img" 
              style={{height:"219px"}}/>
                <div className="card-body">
                <h5 className="card-title">{pizza.name}</h5>
                <hr />
             <div className="card-text">
                 <div className="row">
-                    <div className="col md-6">
+                    <div className="col md-6 ">
                         <h6>Verients</h6>
                         <select value={varient} onChange={(e)=> setVarient(e.target.value)}>
                             {pizza.variants.map((varients,i) =>{

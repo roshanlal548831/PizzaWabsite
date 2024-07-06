@@ -21,7 +21,7 @@ const CartScreen = () => {
       <div className="container">
           <div className="row">
                 <div className="col-md-6">
-                  <h1>Card itens</h1>
+                  <h1>Card items</h1>
                     
                         {
                           cartItems.map((items,i) => {

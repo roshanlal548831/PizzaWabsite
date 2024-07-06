@@ -1,4 +1,9 @@
 import React, { useState } from 'react'
+import {useDispatch,useSelector} from "react-redux";
+import {registerUser} from "../action/UserAction";
+import Loader from "../componets/Loader"
+import { toast} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const[user,setUser] = useState({
@@ -7,6 +12,12 @@ const Register = () => {
           password:"",
           cpassword:""
     });
+
+    const dispatch = useDispatch();
+    const registerhandler = useSelector(state => state.registerUserReducer);
+// console.log(registerUser)
+const{error,success,loading} = registerhandler
+    // console.log(error)
 
     const handleInput = (e)=>{
         const name = e.target.name;
@@ -19,13 +30,14 @@ const Register = () => {
             )}
 
     const handelSubmit = (e)=>{
+
        e.preventDefault();
         if(user.password === user.cpassword){
-            console.log(user)
+           dispatch(registerUser(user))
         }else{
             alert("not match")
         }
-    
+    console.log(user)
         setUser({
             name:"",
             email: "",
@@ -38,8 +50,9 @@ const Register = () => {
   return (
     <>
              <div className="container">
+              {loading && <Loader/>}
+              {error && toast("Sumthing went wrong")}
                <form onSubmit={handelSubmit}>
-                    
                <div className="mb-3">
                        <label htmlFor="exampleInputPassword1" className="form-label">Name</label>
                        <input type="text" name='name' onChange={handleInput} value={user.name} className="form-control" id="exampleInputPassword1"/>
