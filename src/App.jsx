@@ -10,6 +10,7 @@ import CartScreen from "./screens/CartScreen";
 import "react-icons"
 import Login from "./screens/Login";
 import Register from "./screens/Register";
+import OrderScreen from "./screens/OrderScreen";
 // import { FaBeer } from 'reac-icons/fa';
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/cart" element={<CartScreen/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/order" element={<OrderScreen/>}/>
          </Routes>
       </BrowserRouter>
     </>

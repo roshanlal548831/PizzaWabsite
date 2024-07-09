@@ -26,8 +26,8 @@ const Navbar = () => {
           {currentUser.name}
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">order</a></li>
-          <li><a className="dropdown-item" onClick={()=>{dispatch(logoutUser())}}>Logout</a></li>
+            <li><NavLink className="dropdown-item" to="/order">order</NavLink></li>
+          <li><NavLink className="dropdown-item" onClick={()=>{dispatch(logoutUser())}}>Logout</NavLink></li>
          
           </ul>
         </li>
