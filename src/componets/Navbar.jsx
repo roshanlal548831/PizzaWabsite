@@ -19,7 +19,8 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         {
-           currentUser ? (  <li className="nav-item">
+           currentUser ? (
+              <li className="nav-item">
             {/* <NavLink className="nav-link active" aria-current="page" >{currentUser.name}</NavLink> */}
             <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -27,8 +28,7 @@ const Navbar = () => {
           </a>
           <ul className="dropdown-menu">
             <li><NavLink className="dropdown-item" to="/order">order</NavLink></li>
-          <li><NavLink className="dropdown-item" onClick={()=>{dispatch(logoutUser())}}>Logout</NavLink></li>
-         
+            <li><NavLink className="dropdown-item" onClick={()=>{dispatch(logoutUser())}}>Logout</NavLink></li>
           </ul>
         </li>
             </li>

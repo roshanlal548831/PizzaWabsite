@@ -11,13 +11,16 @@ import "react-icons"
 import Login from "./screens/Login";
 import Register from "./screens/Register";
 import OrderScreen from "./screens/OrderScreen";
+import AdminScreen from "./screens/AdminScreen";
+import UserList from "./componets/admin/UserList";
 // import { FaBeer } from 'reac-icons/fa';
 function App() {
   return (
     <>
       <BrowserRouter>
       <TopNav/>
-      <Navbar/>
+        <Navbar/>
+        <AdminScreen/>
         <Routes>
           <Route path="/" element={<HomeScreen/>}/>
           <Route path="/about" element={<About/>}/>
@@ -27,6 +30,8 @@ function App() {
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/order" element={<OrderScreen/>}/>
+          <Route path="/admin/*" element={<AdminScreen/>}/>
+          {/* <Route path="/admin/userlist" element={<UserList/>}/> */}
          </Routes>
       </BrowserRouter>
     </>
